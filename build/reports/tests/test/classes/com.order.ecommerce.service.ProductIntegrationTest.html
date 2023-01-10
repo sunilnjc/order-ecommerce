@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ProductIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ProductIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.order.ecommerce.service.html">com.order.ecommerce.service</a> &gt; ProductIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.056s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testGetProduct()"></a>
+<h3 class="failures">testGetProduct()</h3>
+<span class="code">
+<pre>org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is io.zonky.test.db.shaded.com.google.common.util.concurrent.UncheckedExecutionException: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at app//org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:467)
+	at app//org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at app//org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at app//org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:103)
+	at app//org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:231)
+	at app//org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293)
+	at app//org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:174)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:166)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:202)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:202)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:165)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:132)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@16.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@16.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at app//org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@16.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@16.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base@16.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@16.0.1/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	Suppressed: java.lang.IllegalStateException: Failed to unwrap proxied object
+		at org.springframework.test.util.AopTestUtils.getUltimateTargetObject(AopTestUtils.java:97)
+		at org.springframework.boot.test.mock.mockito.SpringBootMockResolver.resolve(SpringBootMockResolver.java:35)
+		at org.mockito.internal.util.MockUtil.resolve(MockUtil.java:118)
+		at org.mockito.internal.util.MockUtil.isMock(MockUtil.java:108)
+		at org.mockito.internal.util.DefaultMockingDetails.isMock(DefaultMockingDetails.java:32)
+		at org.springframework.boot.test.mock.mockito.MockReset.get(MockReset.java:106)
+		at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:82)
+		at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:70)
+		at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:64)
+		at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:445)
+		at org.springframework.test.context.junit.jupiter.SpringExtension.afterEach(SpringExtension.java:206)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachCallbacks$12(TestMethodTestDescriptor.java:260)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:276)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:276)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:275)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachCallbacks(TestMethodTestDescriptor.java:259)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:144)
+		... 63 more
+	Caused by: io.zonky.test.db.shaded.com.google.common.util.concurrent.UncheckedExecutionException: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+		at app//io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1571)
+		at app//io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1556)
+		at app//io.zonky.test.db.context.DefaultDatabaseContext.awaitDatabase(DefaultDatabaseContext.java:282)
+		at app//io.zonky.test.db.context.DefaultDatabaseContext.getDatabase(DefaultDatabaseContext.java:123)
+		at app//io.zonky.test.db.context.DatabaseTargetSource.getTarget(DatabaseTargetSource.java:32)
+		at app//org.springframework.test.util.AopTestUtils.getUltimateTargetObject(AopTestUtils.java:90)
+		... 81 more
+	Caused by: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+		at app//io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:117)
+		at app//io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createTemplate(DockerPostgresDatabaseProvider.java:102)
+		at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplate(TemplatingDatabaseProvider.java:129)
+		at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.lambda$createTemplateIfPossible$1(TemplatingDatabaseProvider.java:171)
+		at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.loadTemplate(TemplatingDatabaseProvider.java:294)
+		at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.access$200(TemplatingDatabaseProvider.java:224)
+		at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplateIfPossible(TemplatingDatabaseProvider.java:171)
+		at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:112)
+		at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:104)
+		at app//io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.lambda$forPreparer$0(PrefetchingDatabaseProvider.java:391)
+		at java.base@16.0.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at app//io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.run(PrefetchingDatabaseProvider.java:420)
+		at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+Caused by: io.zonky.test.db.shaded.com.google.common.util.concurrent.UncheckedExecutionException: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at app//io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1571)
+	at app//io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1556)
+	at app//io.zonky.test.db.context.DefaultDatabaseContext.awaitDatabase(DefaultDatabaseContext.java:282)
+	at app//io.zonky.test.db.context.DefaultDatabaseContext.getDatabase(DefaultDatabaseContext.java:123)
+	at app//io.zonky.test.db.context.DatabaseTargetSource.getTarget(DatabaseTargetSource.java:32)
+	at app//org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:195)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy133.getConnection(Unknown Source)
+	at app//org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at app//org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:38)
+	at app//org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:108)
+	at app//org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:138)
+	at app//org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:276)
+	at app//org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:284)
+	at app//org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:246)
+	at app//org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:164)
+	at app//org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:421)
+	... 75 more
+Caused by: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at app//io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:117)
+	at app//io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createTemplate(DockerPostgresDatabaseProvider.java:102)
+	at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplate(TemplatingDatabaseProvider.java:129)
+	at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.lambda$createTemplateIfPossible$1(TemplatingDatabaseProvider.java:171)
+	at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.loadTemplate(TemplatingDatabaseProvider.java:294)
+	at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.access$200(TemplatingDatabaseProvider.java:224)
+	at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplateIfPossible(TemplatingDatabaseProvider.java:171)
+	at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:112)
+	at app//io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:104)
+	at app//io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.lambda$forPreparer$0(PrefetchingDatabaseProvider.java:391)
+	at java.base@16.0.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at app//io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.run(PrefetchingDatabaseProvider.java:420)
+	at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.lambda$getFirstValidStrategy$7(DockerClientProviderStrategy.java:215)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:207)
+	at org.testcontainers.DockerClientFactory.getOrInitializeStrategy(DockerClientFactory.java:136)
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:178)
+	at org.testcontainers.LazyDockerClient.getDockerClient(LazyDockerClient.java:14)
+	at org.testcontainers.LazyDockerClient.authConfig(LazyDockerClient.java:12)
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:310)
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$DatabaseInstance.&lt;init&gt;(DockerPostgresDatabaseProvider.java:173)
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$DatabaseInstance.&lt;init&gt;(DockerPostgresDatabaseProvider.java:137)
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$1.load(DockerPostgresDatabaseProvider.java:77)
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$1.load(DockerPostgresDatabaseProvider.java:75)
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3708)
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2416)
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2299)
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2212)
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache.get(LocalCache.java:4147)
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4151)
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5140)
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:113)
+	... 14 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testGetProduct()</td>
+<td class="failures">0.056s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>00:31:25.920 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+00:31:25.943 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+00:31:26.025 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.order.ecommerce.service.ProductIntegrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+00:31:26.045 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.order.ecommerce.service.ProductIntegrationTest], using SpringBootContextLoader
+00:31:26.050 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.order.ecommerce.service.ProductIntegrationTest]: class path resource [com/order/ecommerce/service/ProductIntegrationTest-context.xml] does not exist
+00:31:26.051 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.order.ecommerce.service.ProductIntegrationTest]: class path resource [com/order/ecommerce/service/ProductIntegrationTestContext.groovy] does not exist
+00:31:26.051 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.order.ecommerce.service.ProductIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:31:26.052 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.order.ecommerce.service.ProductIntegrationTest]: ProductIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:31:26.145 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.order.ecommerce.service.ProductIntegrationTest]
+00:31:26.272 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/Sunil/2022/egen-assignment/order-ecommerce-java/build/classes/java/main/com/order/ecommerce/OrderECommerceApplication.class]
+00:31:26.274 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.order.ecommerce.OrderECommerceApplication for test class com.order.ecommerce.service.ProductIntegrationTest
+00:31:26.386 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.order.ecommerce.service.ProductIntegrationTest]: using defaults.
+00:31:26.386 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener, io.zonky.test.db.event.EventPublishingTestExecutionListener, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener]
+00:31:26.415 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b350309, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ecec90d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@588f63c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5a6fa56e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1981d861, org.springframework.test.context.support.DirtiesContextTestExecutionListener@118ffcfd, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener@53f4c1e6, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener@74174a23, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6342d610, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@dc4a691, org.springframework.test.context.event.EventPublishingTestExecutionListener@784abd3e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@36c2b646, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@434514d8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6b1dc20f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4613311f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6540cf1d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ec8f4b9, io.zonky.test.db.event.EventPublishingTestExecutionListener@bc042d5]
+00:31:26.422 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4c1bdcc2 testClass = ProductIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@762637be testClass = ProductIntegrationTest, locations = '{}', classes = '{class com.order.ecommerce.OrderECommerceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5ae95707, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7afbf561, [ImportsContextCustomizer@23f3da8b key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@571a9686, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a34e9f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4d0753c9, io.zonky.test.db.EmbeddedDatabaseContextCustomizerFactory$EmbeddedDatabaseContextCustomizer@445991ed, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3514a4c0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.4)
+
+2023-01-07 00:31:27.316  INFO 9982 --- [    Test worker] c.o.e.service.ProductIntegrationTest     : Starting ProductIntegrationTest using Java 16.0.1 on Sunilkumars-MacBook-Pro.local with PID 9982 (started by Sunil in /Users/Sunil/2022/egen-assignment/order-ecommerce-java)
+2023-01-07 00:31:27.330  INFO 9982 --- [    Test worker] c.o.e.service.ProductIntegrationTest     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-01-07 00:31:28.769  INFO 9982 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-07 00:31:28.963  INFO 9982 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 5 JPA repository interfaces.
+2023-01-07 00:31:29.293  INFO 9982 --- [    Test worker] EmbeddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
+2023-01-07 00:31:29.730  INFO 9982 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$EnhancerBySpringCGLIB$$d67fe872] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-01-07 00:31:30.360  WARN 9982 --- [  prefetching-1] o.t.utility.TestcontainersConfiguration  : Attempted to read Testcontainers configuration file at file:/Users/Sunil/.testcontainers.properties but the file was not found. Exception message: FileNotFoundException: /Users/Sunil/.testcontainers.properties (No such file or directory)
+2023-01-07 00:31:30.370  INFO 9982 --- [  prefetching-1] .t.d.DockerMachineClientProviderStrategy : docker-machine executable was not found on PATH ([/Library/Frameworks/Python.framework/Versions/3.9/bin, /Library/Frameworks/Python.framework/Versions/3.8/bin, /usr/local/bin, /System/Cryptexes/App/usr/bin, /usr/bin, /bin, /usr/sbin, /sbin, /Library/Apple/usr/bin, /Users/Sunil/udemy-learnings/Developer/flutter/bin])
+2023-01-07 00:31:30.374 ERROR 9982 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       : Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+2023-01-07 00:31:30.374 ERROR 9982 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       :     UnixSocketClientProviderStrategy: failed with exception InvalidConfigurationException (Could not find unix domain socket). Root cause NoSuchFileException (/var/run/docker.sock)
+2023-01-07 00:31:30.374 ERROR 9982 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       : As no valid configuration was found, execution cannot continue
+2023-01-07 00:31:30.465  INFO 9982 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-07 00:31:30.522  INFO 9982 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-01-07 00:31:30.614  INFO 9982 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-07 00:31:30.727  WARN 9982 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+io.zonky.test.db.shaded.com.google.common.util.concurrent.UncheckedExecutionException: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1571) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1556) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DefaultDatabaseContext.awaitDatabase(DefaultDatabaseContext.java:282) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DefaultDatabaseContext.getDatabase(DefaultDatabaseContext.java:126) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DatabaseTargetSource.getTarget(DatabaseTargetSource.java:32) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:195) ~[spring-aop-5.3.23.jar:5.3.23]
+	at jdk.proxy3/jdk.proxy3.$Proxy133.getConnection(Unknown Source) ~[na:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.&lt;init&gt;(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.23.jar:5.3.23]
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.forEachDatabase(EmbeddedDatabaseTestExecutionListener.java:90) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.resetDatabases(EmbeddedDatabaseTestExecutionListener.java:58) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.beforeTestClass(EmbeddedDatabaseTestExecutionListener.java:34) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at org.springframework.test.context.TestContextManager.beforeTestClass(TestContextManager.java:213) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:113) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$12(ClassBasedTestDescriptor.java:395) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:395) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:211) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:84) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:117) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createTemplate(DockerPostgresDatabaseProvider.java:102) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplate(TemplatingDatabaseProvider.java:129) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.lambda$createTemplateIfPossible$1(TemplatingDatabaseProvider.java:171) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.loadTemplate(TemplatingDatabaseProvider.java:294) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.access$200(TemplatingDatabaseProvider.java:224) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplateIfPossible(TemplatingDatabaseProvider.java:171) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:112) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:104) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.lambda$forPreparer$0(PrefetchingDatabaseProvider.java:391) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.run(PrefetchingDatabaseProvider.java:420) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.lambda$getFirstValidStrategy$7(DockerClientProviderStrategy.java:215) ~[testcontainers-1.15.3.jar:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:207) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.DockerClientFactory.getOrInitializeStrategy(DockerClientFactory.java:136) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:178) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.LazyDockerClient.getDockerClient(LazyDockerClient.java:14) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.LazyDockerClient.authConfig(LazyDockerClient.java:12) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:310) ~[testcontainers-1.15.3.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$DatabaseInstance.&lt;init&gt;(DockerPostgresDatabaseProvider.java:173) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$DatabaseInstance.&lt;init&gt;(DockerPostgresDatabaseProvider.java:137) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$1.load(DockerPostgresDatabaseProvider.java:77) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$1.load(DockerPostgresDatabaseProvider.java:75) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3708) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2416) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2299) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2212) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache.get(LocalCache.java:4147) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4151) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5140) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:113) ~[embedded-database-spring-test-2.1.2.jar:na]
+	... 14 common frames omitted
+
+2023-01-07 00:31:30.744  INFO 9982 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-07 00:31:31.408  INFO 9982 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-07 00:31:31.418  INFO 9982 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-07 00:31:32.646  WARN 9982 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-07 00:31:35.538  INFO 9982 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-01-07 00:31:35.540  INFO 9982 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-01-07 00:31:35.542  INFO 9982 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-01-07 00:31:35.597  INFO 9982 --- [    Test worker] c.o.e.service.ProductIntegrationTest     : Started ProductIntegrationTest in 9.042 seconds (JVM running for 12.469)
+2023-01-07 00:31:35.664  WARN 9982 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@6342d610] for test method [void com.order.ecommerce.service.ProductIntegrationTest.testGetProduct() throws java.lang.Exception] and test instance [com.order.ecommerce.service.ProductIntegrationTest@4f378d7e]
+
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is io.zonky.test.db.shaded.com.google.common.util.concurrent.UncheckedExecutionException: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:467) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400) ~[spring-tx-5.3.23.jar:5.3.23]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:103) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:231) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:174) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:166) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:165) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:132) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: io.zonky.test.db.shaded.com.google.common.util.concurrent.UncheckedExecutionException: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1571) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1556) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DefaultDatabaseContext.awaitDatabase(DefaultDatabaseContext.java:282) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DefaultDatabaseContext.getDatabase(DefaultDatabaseContext.java:123) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DatabaseTargetSource.getTarget(DatabaseTargetSource.java:32) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:195) ~[spring-aop-5.3.23.jar:5.3.23]
+	at jdk.proxy3/jdk.proxy3.$Proxy133.getConnection(Unknown Source) ~[na:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:38) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:108) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:138) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:276) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:284) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:246) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:164) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:421) ~[spring-orm-5.3.23.jar:5.3.23]
+	... 75 common frames omitted
+Caused by: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:117) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createTemplate(DockerPostgresDatabaseProvider.java:102) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplate(TemplatingDatabaseProvider.java:129) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.lambda$createTemplateIfPossible$1(TemplatingDatabaseProvider.java:171) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.loadTemplate(TemplatingDatabaseProvider.java:294) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.access$200(TemplatingDatabaseProvider.java:224) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplateIfPossible(TemplatingDatabaseProvider.java:171) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:112) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:104) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.lambda$forPreparer$0(PrefetchingDatabaseProvider.java:391) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.run(PrefetchingDatabaseProvider.java:420) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.lambda$getFirstValidStrategy$7(DockerClientProviderStrategy.java:215) ~[testcontainers-1.15.3.jar:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:207) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.DockerClientFactory.getOrInitializeStrategy(DockerClientFactory.java:136) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:178) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.LazyDockerClient.getDockerClient(LazyDockerClient.java:14) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.LazyDockerClient.authConfig(LazyDockerClient.java:12) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:310) ~[testcontainers-1.15.3.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$DatabaseInstance.&lt;init&gt;(DockerPostgresDatabaseProvider.java:173) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$DatabaseInstance.&lt;init&gt;(DockerPostgresDatabaseProvider.java:137) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$1.load(DockerPostgresDatabaseProvider.java:77) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$1.load(DockerPostgresDatabaseProvider.java:75) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3708) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2416) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2299) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2212) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache.get(LocalCache.java:4147) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4151) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5140) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:113) ~[embedded-database-spring-test-2.1.2.jar:na]
+	... 14 common frames omitted
+
+2023-01-07 00:31:35.679  WARN 9982 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ec8f4b9] for test method [void com.order.ecommerce.service.ProductIntegrationTest.testGetProduct() throws java.lang.Exception] and test instance [com.order.ecommerce.service.ProductIntegrationTest@4f378d7e]
+
+java.lang.IllegalStateException: Failed to unwrap proxied object
+	at org.springframework.test.util.AopTestUtils.getUltimateTargetObject(AopTestUtils.java:97) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.boot.test.mock.mockito.SpringBootMockResolver.resolve(SpringBootMockResolver.java:35) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.mockito.internal.util.MockUtil.resolve(MockUtil.java:118) ~[mockito-core-4.5.1.jar:na]
+	at org.mockito.internal.util.MockUtil.isMock(MockUtil.java:108) ~[mockito-core-4.5.1.jar:na]
+	at org.mockito.internal.util.DefaultMockingDetails.isMock(DefaultMockingDetails.java:32) ~[mockito-core-4.5.1.jar:na]
+	at org.springframework.boot.test.mock.mockito.MockReset.get(MockReset.java:106) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:82) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:70) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:64) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:445) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.afterEach(SpringExtension.java:206) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachCallbacks$12(TestMethodTestDescriptor.java:260) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:276) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:276) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:275) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachCallbacks(TestMethodTestDescriptor.java:259) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:144) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.0.jar:5.9.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: io.zonky.test.db.shaded.com.google.common.util.concurrent.UncheckedExecutionException: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1571) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1556) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DefaultDatabaseContext.awaitDatabase(DefaultDatabaseContext.java:282) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DefaultDatabaseContext.getDatabase(DefaultDatabaseContext.java:123) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.context.DatabaseTargetSource.getTarget(DatabaseTargetSource.java:32) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at org.springframework.test.util.AopTestUtils.getUltimateTargetObject(AopTestUtils.java:90) ~[spring-test-5.3.23.jar:5.3.23]
+	... 81 common frames omitted
+Caused by: io.zonky.test.db.provider.ProviderException: Unexpected error when preparing a database cluster; nested exception is java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:117) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createTemplate(DockerPostgresDatabaseProvider.java:102) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplate(TemplatingDatabaseProvider.java:129) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.lambda$createTemplateIfPossible$1(TemplatingDatabaseProvider.java:171) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.loadTemplate(TemplatingDatabaseProvider.java:294) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider$TemplateWrapper.access$200(TemplatingDatabaseProvider.java:224) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createTemplateIfPossible(TemplatingDatabaseProvider.java:171) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:112) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.TemplatingDatabaseProvider.createDatabase(TemplatingDatabaseProvider.java:104) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.lambda$forPreparer$0(PrefetchingDatabaseProvider.java:391) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.zonky.test.db.provider.common.PrefetchingDatabaseProvider$PrefetchingTask.run(PrefetchingDatabaseProvider.java:420) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.lambda$getFirstValidStrategy$7(DockerClientProviderStrategy.java:215) ~[testcontainers-1.15.3.jar:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:207) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.DockerClientFactory.getOrInitializeStrategy(DockerClientFactory.java:136) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:178) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.LazyDockerClient.getDockerClient(LazyDockerClient.java:14) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.LazyDockerClient.authConfig(LazyDockerClient.java:12) ~[testcontainers-1.15.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:310) ~[testcontainers-1.15.3.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$DatabaseInstance.&lt;init&gt;(DockerPostgresDatabaseProvider.java:173) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$DatabaseInstance.&lt;init&gt;(DockerPostgresDatabaseProvider.java:137) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$1.load(DockerPostgresDatabaseProvider.java:77) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider$1.load(DockerPostgresDatabaseProvider.java:75) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3708) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2416) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2299) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2212) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache.get(LocalCache.java:4147) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4151) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.shaded.com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5140) ~[embedded-database-spring-test-2.1.2.jar:na]
+	at io.zonky.test.db.provider.postgres.DockerPostgresDatabaseProvider.createDatabase(DockerPostgresDatabaseProvider.java:113) ~[embedded-database-spring-test-2.1.2.jar:na]
+	... 14 common frames omitted
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 7 Jan 2023, 00:31:35</p>
+</div>
+</div>
+</body>
+</html>
